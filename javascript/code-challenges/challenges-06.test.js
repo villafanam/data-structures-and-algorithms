@@ -21,28 +21,28 @@ For example:
 
 Returns: ['dyoll', 'eimaj'];
 ------------------------------------------------------------------------------------------------ */
-const getNames = (arr) => {
-  return arr.map(element => element.name.split('').reverse().join(''));
-};
 // const getNames = (arr) => {
-//   // Solution code here...
-//   let names = [];
-//   let charArr = [];
-//   names = arr.map(element => {
-//     charArr = element.name.split('');
-//     console.log(charArr);
-
-//     charArr = charArr.reverse();
-//     console.log(charArr);
-
-//     names.push(charArr.join(''));
-//     console.log(names);
-
-//     // return names;
-//   });
-//   // console.log(names);
-//   // return names;
+//   return arr.map(element => element.name.split('').reverse().join(''));
 // };
+const getNames = (arr) => {
+  // Solution code here...
+  let names = [];
+  let charArr = [];
+  names = arr.map(element => {
+    charArr = element.name.split('');
+    console.log(charArr);
+
+    charArr = charArr.reverse();
+    console.log(charArr);
+
+    return charArr.join('');
+    //console.log(names);
+
+    //return names;
+  });
+  console.log(names);
+  return names;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
