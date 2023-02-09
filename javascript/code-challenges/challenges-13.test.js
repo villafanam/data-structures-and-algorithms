@@ -99,6 +99,9 @@ const allHappy = (arr) => {
   // Solution code here...
   let str = ':)';
   let result = false;
+
+  if(arr.length === 0 ){return true;}
+
   for(let i in arr)
   {
     if (arr[i].includes(str)) {
@@ -109,8 +112,8 @@ const allHappy = (arr) => {
       break;
     }
   }
-  console.log(arr);
-  console.log(result);
+  // console.log(arr);
+  // console.log(result);
   return result;
 };
 
