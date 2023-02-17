@@ -1,9 +1,9 @@
 # Singly Linked List
-
-Implementation linked list class
+<!-- Short summary or background information -->
 
 ## Challenge
 <!-- Description of the challenge -->
+Implementation  of linked list class
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
