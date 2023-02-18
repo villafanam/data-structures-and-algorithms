@@ -14,6 +14,23 @@ class LinkedList {
     this.head = new Node(value, this.head);
   }
 
+  includes(value)
+  {
+    let current = this.head;
+
+    while(current)
+    {
+      if(current.value === value)
+      {
+        return true;
+      }
+
+      current = current.next;
+    }
+
+    return false;
+  }
+
   toString()
   {
     //'{ banana } -> { apple } -> NULL'
