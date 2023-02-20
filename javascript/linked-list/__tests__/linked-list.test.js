@@ -80,4 +80,18 @@ describe('Linked List', () => {
     expect(linkedString).toEqual('{ banana } -> { apple } -> NULL');
   });
 
+  //----------code challenge 06---------
+  it('should successfully add a node to the end of the linked list', () => {
+    const linked = new LinkedList();
+    linked.insert('apple');
+    linked.insert('banana');
+    linked.append('kiwi');
+
+
+    expect(linked.head.value).toEqual('banana');
+    expect(linked.head.next.value).toEqual('apple');
+    expect(linked.head.next.next.value).toEqual('kiwi');
+    expect(linked.head.next.next.next).toBeNull();
+  });
+
 });
