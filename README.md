@@ -24,3 +24,5 @@ To run your tests
 
 - [Array Reverse](/javascript/arrayReverse/README.md)
 - [Insert Shift Array](/javascript/insertShiftArray/README.md)
+- [Linked List](/javascript/linked-list/README.md)
+- [Linked List Insertions](/javascript/linkedList_Insertions/README.md)
