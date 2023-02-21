@@ -3,6 +3,7 @@
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail = null;
   }
 
   insert(value) {
@@ -93,6 +94,32 @@ class LinkedList {
       current = current.next;
     }
   }
+
+  kthFromEnd(k){
+    let current = this.head;
+    let len = 0;
+
+    while(current)
+    {
+      //do the thing
+      len++;
+      current = current.next;
+    }
+
+    current = this.head;
+
+    for(let i = len; i > 0; i--)
+    {
+      if(i === k)
+      {
+        return current.value;
+      }
+      current = current.next;
+    }
+    return null;
+  }
+
+
 
 }
 
