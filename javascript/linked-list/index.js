@@ -49,6 +49,12 @@ class LinkedList {
   }
 
   append(value){
+    if(!this.head)
+    {
+      this.insert(value);
+      return;
+    }
+
     let current = this.head;
 
     while(current.next)
@@ -117,6 +123,30 @@ class LinkedList {
       current = current.next;
     }
     return null;
+  }
+
+  zipLists(list1, list2)
+  {
+    let current1 = list1.head;
+    let current2 = list2.head;
+    let result = new LinkedList();
+
+    while(current1 || current2)
+    {
+      if(current1)
+      {
+        result.append(current1.value);
+        current1 = current1.next;
+      }
+
+      if(current2)
+      {
+        result.append(current2.value);
+        current2 = current2.next;
+      }
+    }
+
+    return result;
   }
 
 
