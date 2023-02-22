@@ -26,3 +26,5 @@ To run your tests
 - [Insert Shift Array](/javascript/insertShiftArray/README.md)
 - [Linked List](/javascript/linked-list/README.md)
 - [Linked List Insertions](/javascript/linkedList_Insertions/README.md)
+- [Linked List k-th](/javascript//linked-list-kth/README.md)
+- [Linked List Zip](/javascript/linkedList_Zip/README.md)
