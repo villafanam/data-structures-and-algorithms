@@ -28,3 +28,4 @@ To run your tests
 - [Linked List Insertions](/javascript/linkedList_Insertions/README.md)
 - [Linked List k-th](/javascript//linked-list-kth/README.md)
 - [Linked List Zip](/javascript/linkedList_Zip/README.md)
+- [Stacks and Queues](/javascript/stack-and-queue/README.md)
