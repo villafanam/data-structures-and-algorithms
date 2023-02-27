@@ -3,6 +3,7 @@
 // equivalent imports
 // const { Stack, Queue } = require('./index.js');
 const { Stack, Queue } = require('../index');
+const PsuedoQueue  = require('../pseudoQueue');
 
 describe('Stack', () => {
   it('Can successfully push onto a stack', () => {
@@ -192,6 +193,26 @@ describe('Queue', () => {
   it('Calling peek  on empty queue raises exception', () => {
     let queue = new Queue();
     expect(queue.peek()).toBeNull();
+  });
+
+});
+
+describe('Pseudo Queue', () => {
+  it('PsuedoQ can enqueue', () => {
+    const pQ = new PsuedoQueue();
+    pQ.enqueue(1);
+    pQ.enqueue(2);
+    pQ.enqueue(3);
+    expect(pQ.stack1.peek()).toEqual(1);
+  });
+
+  it('PsuedoQ can dequeue', () => {
+    const pQ = new PsuedoQueue();
+    pQ.enqueue(1);
+    pQ.enqueue(2);
+    pQ.enqueue(3);
+    pQ.dequeue();
+    expect(pQ.stack1.peek()).toEqual(2);
   });
 
 });
