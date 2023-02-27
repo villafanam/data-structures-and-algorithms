@@ -1,6 +1,6 @@
 'use strict';
 
-const { Stack } = require('./index');
+const { Stack } = require('../stack-and-queue/index');
 
 class PsuedoQueue {
   constructor() {
