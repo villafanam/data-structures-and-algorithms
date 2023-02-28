@@ -30,3 +30,4 @@ To run your tests
 - [Linked List Zip](/javascript/linkedList_Zip/README.md)
 - [Stacks and Queues](/javascript/stack-and-queue/README.md)
 - [stack-queue-pseudo](/javascript/stack-queue-pseudo/README.md)
+- [stack-queue-animal-shelter](/javascript/stack-queue-animal-shelter/README.md)
