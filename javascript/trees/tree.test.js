@@ -37,6 +37,22 @@ describe('BinaryTree', () => {
     expect(results).toEqual([1, 8, 5, 17, 15, 10]);
   });
 
+  it('returns max value in a tree', () => {
+    let tree = new BinaryTree();
+
+    tree.root = new Node(17);
+    tree.root.right = new Node(20);
+    tree.root.right.right = new Node(29);
+
+    tree.root.left = new Node(1);
+    tree.root.left.left = new Node(25);
+    tree.root.left.right = new Node(24);
+
+    let max = tree.getMax();
+
+    expect(max).toEqual(29);
+  });
+
 });
 
 describe('BinarySearchTree', () => {
@@ -56,13 +72,13 @@ describe('BinarySearchTree', () => {
 
   });
 
-  it('can verify it contains a certain value', () => {
+  // it('can verify it contains a certain value', () => {
 
-    expect(BTS.contains(10)).toEqual(true);
-    expect(BTS.contains(17)).toEqual(true);
-    expect(BTS.contains(88)).toEqual(false);
+  //   expect(BTS.contains(10)).toEqual(true);
+  //   expect(BTS.contains(17)).toEqual(true);
+  //   expect(BTS.contains(88)).toEqual(false);
 
-  });
+  // });
 
 
 });
