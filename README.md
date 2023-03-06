@@ -32,3 +32,4 @@ To run your tests
 - [stack-queue-pseudo](/javascript/stack-queue-pseudo/README.md)
 - [stack-queue-animal-shelter](/javascript/stack-queue-animal-shelter/README.md)
 - [stack-queue-brackets](/javascript/stack-queue-brackets/README.md)
+- [trees](/javascript/trees/README.md)
