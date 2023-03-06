@@ -93,6 +93,30 @@ class BinaryTree {
     return results;
   }
 
+  getMax()
+  {
+    let maxVal = this.root.value;
+
+    const traverse = (node) => {
+      // recursive left case
+      if (node.left) traverse(node.left);
+
+      // base case
+      if(node.value > maxVal)
+      {
+        maxVal = node.value;
+      }
+
+      // recursive right case
+      if (node.right) traverse(node.right);
+
+    };
+    // get the party started
+    traverse(this.root);
+
+    return maxVal;
+  }
+
 }
 
 class BinarySearchTree
@@ -163,6 +187,8 @@ class BinarySearchTree
 // tree.root.left.left = new Node(1);
 // tree.root.left.right = new Node(8);
 // tree.root.right.right = new Node(17);
+
+// console.log(tree.getMax());
 
 // const results = tree.postOrder();
 // console.log('results:', results);
