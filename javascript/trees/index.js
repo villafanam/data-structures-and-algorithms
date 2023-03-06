@@ -24,7 +24,7 @@ class Node {
 // }
 
 // binary tree
-class Tree {
+class BinaryTree {
   constructor() {
     this.root = null;
   }
@@ -45,7 +45,7 @@ class Tree {
       if (node.right) {
         traverse(node.right);
       }
-    }
+    };
 
     // GET THE PARTY STARTED!
     traverse(this.root);
@@ -54,22 +54,28 @@ class Tree {
   }
 
   inOrder() {
+    const results = [];
+
     const traverse = (node) => {
       // recursive left case
       if (node.left) traverse(node.left);
 
       // base case
-      console.log(node.value);
+      results.push(node.value);
 
       // recursive right case
       if (node.right) traverse(node.right);
 
-    }
+    };
     // get the party started
     traverse(this.root);
+
+    return results;
   }
 
   postOrder() {
+    const results = [];
+
     const traverse = (node) => {
       // recursive left case
       if (node.left) traverse(node.left);
@@ -78,25 +84,87 @@ class Tree {
       if (node.right) traverse(node.right);
 
       // base case
-      console.log(node.value);
+      results.push(node.value);
 
-    }
+    };
     // get the party started
     traverse(this.root);
+
+    return results;
   }
+
 }
 
-let tree = new Tree();
-tree.root = new Node(10);
-tree.root.left = new Node(5);
-tree.root.right = new Node(15);
-tree.root.left.left = new Node(1);
-tree.root.left.right = new Node(8);
-tree.root.right.right = new Node(17);
+class BinarySearchTree
+{
+  constructor() {
+    this.root = null;
+  }
 
-// tree.inOrder();
-// tree.postOrder();
-const results = tree.preOrder();
-console.log('results:', results);
+  add(value)
+  {
+    const addNode = (node, newNode) => {
+      if(newNode.value < node.value){
+        if(node.left === null){
+          node.left = newNode;
+        }
+        else{
+          addNode(node.left, newNode);
+        }
+      }
+      else{
+        if(node.right === null){
+          node.right = newNode;
+        }
+        else {
+          addNode(node.right, newNode);
+        }
+      }
+    };
 
-module.exports = { Node, Tree };
+    let newNode = new Node(value);
+
+    if(this.root === null)
+    {
+      this.root = newNode;
+    }
+    else
+    {
+      addNode(this.root, newNode);
+    }
+
+  }
+
+  contains(value, node = this.root){
+    if(node === null){
+      return null;
+    }
+    else if(value < node.value){
+      return this.contains(value, node.left);
+    }
+    else if (value > node.value){
+      return this.contains(value, node.right);
+    }
+    else if(value === node.value) {
+      return true;
+    }
+    else {
+      return false;
+    }
+
+  }
+
+}
+
+// let tree = new BinaryTree();
+// tree.root = new Node(10);
+// tree.root.left = new Node(5);
+// tree.root.right = new Node(15);
+// tree.root.left.left = new Node(1);
+// tree.root.left.right = new Node(8);
+// tree.root.right.right = new Node(17);
+
+// const results = tree.postOrder();
+// console.log('results:', results);
+
+module.exports = { Node, BinaryTree, BinarySearchTree };
