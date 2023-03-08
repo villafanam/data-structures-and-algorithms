@@ -8,20 +8,20 @@ class Node {
   }
 }
 
-// useful for a later code challenge
-// class KaryNode {
-//   constructor(value, k) {
-//     this.value = value;
-//     this.children = new Array(k).fill(null);
-//   }
-// }
+//useful for a later code challenge
+class KaryNode {
+  constructor(value, k) {
+    this.value = value;
+    this.children = new Array(k).fill(null);
+  }
+}
 
-// useful for a later code challenge
-// class KaryTree {
-//   constructor() {
-//     this.root = null;
-//   }
-// }
+//useful for a later code challenge
+class KaryTree {
+  constructor() {
+    this.root = null;
+  }
+}
 
 // binary tree
 class BinaryTree {
