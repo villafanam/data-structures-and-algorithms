@@ -36,3 +36,4 @@ To run your tests
 - [tree-max](/javascript/tree-max/README.md)
 - [tree-fizz-buzz](/javascript/tree-fizz-buzz/README.md)
 - [Insertion Sort](/javascript/sorting/insertion/README.md)
+- [Merge Sort](/javascript/sorting/merge/)
