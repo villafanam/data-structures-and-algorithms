@@ -37,3 +37,4 @@ To run your tests
 - [tree-fizz-buzz](/javascript/tree-fizz-buzz/README.md)
 - [Insertion Sort](/javascript/sorting/insertion/README.md)
 - [Merge Sort](/javascript/sorting/merge/)
+- [Sorting: Comparisons](/javascript/sorting/comparisons/sort.js)
