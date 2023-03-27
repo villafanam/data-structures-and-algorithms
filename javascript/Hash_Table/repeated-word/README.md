@@ -14,4 +14,5 @@
 + Pair group coding and utilized the previous lab to complete test
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+![CC31 tests](/javascript/assets/CC31_test.png)
