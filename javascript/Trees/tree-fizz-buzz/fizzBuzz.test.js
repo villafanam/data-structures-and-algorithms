@@ -2,7 +2,7 @@
 
 
 const { Node, BinaryTree } = require('../trees/index');
-const { fizzBuzzTree } = require('../tree-fizz-buzz/index');
+const { fizzBuzzTree } = require('./index');
 
 describe('BinaryTree', () => {
   let tree = new BinaryTree();
