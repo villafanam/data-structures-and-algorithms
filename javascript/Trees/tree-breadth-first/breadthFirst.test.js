@@ -1,7 +1,7 @@
 'use strict';
 
 const { BinaryTree, Node } = require('../trees/index');
-const { breadthFirst } = require('../tree-breadth-first');
+const { breadthFirst } = require('.');
 
 
 describe('Breadth First tree', () => {
