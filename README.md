@@ -38,3 +38,4 @@ To run your tests
 - [Insertion Sort](/javascript/sorting/insertion/README.md)
 - [Merge Sort](/javascript/sorting/merge/)
 - [Sorting: Comparisons](/javascript/sorting/comparisons/sort.js)
+-[Hash Tables](/javascript/hashTable/README.md)
