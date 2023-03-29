@@ -40,3 +40,4 @@ To run your tests
 - [Sorting: Comparisons](/javascript/sorting/comparisons/sort.js)
 - [Hash Tables](/javascript/Hash_Table/hashTable/README.md)
 - [Repeated Word](/javascript/Hash_Table/repeated-word/README.md)
+- [Hashmap Left Join](/javascript/Hash_Table/hashmap-left-join/README.md)
