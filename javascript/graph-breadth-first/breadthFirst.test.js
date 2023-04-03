@@ -1,6 +1,6 @@
 'use strict';
 
-const Graph = require('./');
+const Graph = require('../graph');
 
 const graph = new Graph();
 
@@ -30,16 +30,21 @@ graph.addDirectedEdge(F, E);
 // console.log(graph.size());
 
 describe('Graph', () => {
-  it('Node can be successfully added to the graph', () => {
-    expect(graph.adjacencyList.has(A)).toEqual(true);
-    expect(graph.adjacencyList.has(H)).toEqual(true);
+  it('Return the expected result', () => {
+    let temp = graph.breadthFirst(A, console.log);
+    let setIter = temp.keys();
+
+    expect(temp.has(A)).toEqual(true);
+    expect(temp.has(H)).toEqual(true);
+
+    expect(setIter.next().value).toEqual({ 'value': 'A' });
+    expect(setIter.next().value).toEqual({ 'value': 'B' });
+    expect(setIter.next().value).toEqual({ 'value': 'D' });
+    expect(setIter.next().value).toEqual({ 'value': 'C' });
+    expect(setIter.next().value).toEqual({ 'value': 'G' });
+    expect(setIter.next().value).toEqual({ 'value': 'F' });
+    expect(setIter.next().value).toEqual({ 'value': 'H' });
+    expect(setIter.next().value).toEqual({ 'value': 'E' });
   });
 
-  // it('An edge can be successfully added to the graph', () => {
-  //   let results = graph.adjacencyList.get(A);
-  //   console.log(B);
-  //   console.log('results----', results);
-  //   expect(results.includes(B)).toEqual(true);
-
-  // });
 });
