@@ -42,3 +42,4 @@ To run your tests
 - [Repeated Word](/javascript/Hash_Table/repeated-word/README.md)
 - [Hashmap Left Join](/javascript/Hash_Table/hashmap-left-join/README.md)
 - [Graph](/javascript/graph/README.md)
+- [Graph Breadth First](/javascript/graph-breadth-first/README.md)
