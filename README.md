@@ -43,3 +43,4 @@ To run your tests
 - [Hashmap Left Join](/javascript/Hash_Table/hashmap-left-join/README.md)
 - [Graph](/javascript/graph/README.md)
 - [Graph Breadth First](/javascript/graph-breadth-first/README.md)
+- [Graph Business Trip](/javascript/graph-business-trip/README.md)
