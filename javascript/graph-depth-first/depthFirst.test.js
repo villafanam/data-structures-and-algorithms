@@ -31,19 +31,19 @@ graph.addDirectedEdge(F, E);
 
 describe('Graph', () => {
   it('Return the expected result', () => {
-    let temp = graph.breadthFirst(A, console.log);
+    let temp = graph.depthFirst(A, console.log);
     let setIter = temp.keys();
-
+    console.log('setIter:----' , setIter);
     expect(temp.has(A)).toEqual(true);
     expect(temp.has(H)).toEqual(true);
 
     expect(setIter.next().value).toEqual({ 'value': 'A' });
+    expect(setIter.next().value).toEqual({ 'value': 'B' });
+    expect(setIter.next().value).toEqual({ 'value': 'D' });
     expect(setIter.next().value).toEqual({ 'value': 'C' });
     expect(setIter.next().value).toEqual({ 'value': 'H' });
-    expect(setIter.next().value).toEqual({ 'value': 'D' });
     expect(setIter.next().value).toEqual({ 'value': 'F' });
     expect(setIter.next().value).toEqual({ 'value': 'E' });
-    expect(setIter.next().value).toEqual({ 'value': 'B' });
     expect(setIter.next().value).toEqual({ 'value': 'G' });
   });
 
