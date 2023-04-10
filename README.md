@@ -45,3 +45,4 @@ To run your tests
 - [Graph Breadth First](/javascript/graph-breadth-first/README.md)
 - [Graph Business Trip](/javascript/graph-business-trip/README.md)
 - [Graph Depth First](/javascript/graph%20depth%20first/README.md)
+- [Navigator Class](/javascript/navigator-class/README.md)
